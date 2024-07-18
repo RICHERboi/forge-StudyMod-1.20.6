@@ -1,6 +1,7 @@
 package net.RICHER.studymod;
 
 import com.mojang.logging.LogUtils;
+import net.RICHER.studymod.Block.ModBlocks;
 import net.RICHER.studymod.Item.ModCreativeModeTabs;
 import net.RICHER.studymod.Item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
@@ -31,6 +32,7 @@ public class StudyMod {
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

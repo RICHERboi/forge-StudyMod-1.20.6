@@ -2,5 +2,8 @@
   "item.studymod.cubium": "Cubium",
   "item.studymod.raw_cubium": "Raw Cubium",
 
+  "block.studymod.cubium_block": "Block of Cubium",
+  "block.studymod.raw_cubium_block": "Block of Raw Cubium",
+
   "creativetab.study_tab": "Study Tab"
 }

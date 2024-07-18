@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "studymod:block/cubium_block"
+    }
+  }
+}

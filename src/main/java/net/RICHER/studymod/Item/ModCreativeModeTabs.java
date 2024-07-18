@@ -1,5 +1,6 @@
 package net.RICHER.studymod.Item;
 
+import net.RICHER.studymod.Block.ModBlocks;
 import net.RICHER.studymod.StudyMod;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -19,6 +20,9 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                        output.accept(ModItems.RAW_CUBIUM.get());
                        output.accept(ModItems.CUBIUM.get());
+
+                       output.accept(ModBlocks.CUBIUM_BLOCK.get());
+                       output.accept(ModBlocks.RAW_CUBIUM_BLOCK.get());
                     })
                     .build());
 
