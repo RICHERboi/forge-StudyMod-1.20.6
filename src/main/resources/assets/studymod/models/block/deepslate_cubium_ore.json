@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "studymod:block/deepslate_cubium_ore"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "cubium",
+  "ingredients": [
+    {
+      "item": "studymod:cubium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "studymod:cubium"
+  }
+}

@@ -5,5 +5,10 @@
   "block.studymod.cubium_block": "Block of Cubium",
   "block.studymod.raw_cubium_block": "Block of Raw Cubium",
 
+  "block.studymod.cubium_ore": "Cubium Ore",
+  "block.studymod.deepslate_cubium_ore": "Deepslate Cubium Ore",
+  "block.studymod.nether_cubium_ore": "Nether Cubium Ore",
+  "block.studymod.end_cubium_ore": "End Cubium Ore",
+
   "creativetab.study_tab": "Study Tab"
 }

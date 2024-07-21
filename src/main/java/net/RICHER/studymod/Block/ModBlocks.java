@@ -2,10 +2,12 @@ package net.RICHER.studymod.Block;
 
 import net.RICHER.studymod.Item.ModItems;
 import net.RICHER.studymod.StudyMod;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -22,6 +24,19 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> RAW_CUBIUM_BLOCK = registerBlock("raw_cubium_block",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.RAW_IRON_BLOCK)));
+
+    public static final RegistryObject<Block> CUBIUM_ORE = registerBlock("cubium_ore",
+            () -> new DropExperienceBlock(UniformInt.of(4,7), BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE)
+                                .requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DEEPSLATE_CUBIUM_ORE = registerBlock("deepslate_cubium_ore",
+            () -> new DropExperienceBlock(UniformInt.of(4,7), BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_IRON_ORE)
+                                .requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> NETHER_CUBIUM_ORE = registerBlock("nether_cubium_ore",
+            () -> new DropExperienceBlock(UniformInt.of(4,6), BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_QUARTZ_ORE)
+                    .strength(2f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> END_CUBIUM_ORE = registerBlock("end_cubium_ore",
+            () -> new DropExperienceBlock(UniformInt.of(5,6), BlockBehaviour.Properties.ofFullCopy(Blocks.END_STONE)
+                    .strength(2.2f).requiresCorrectToolForDrops()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
