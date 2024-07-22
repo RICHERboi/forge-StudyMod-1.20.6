@@ -1,5 +1,6 @@
 package net.RICHER.studymod.Item;
 
+import net.RICHER.studymod.Item.Custom.MetalDetectorItem;
 import net.RICHER.studymod.StudyMod;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -15,6 +16,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_CUBIUM = ITEMS.register("raw_cubium",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
+            () -> new MetalDetectorItem(new Item.Properties().durability(128)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

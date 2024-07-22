@@ -20,6 +20,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                        output.accept(ModItems.RAW_CUBIUM.get());
                        output.accept(ModItems.CUBIUM.get());
+                       output.accept(ModItems.METAL_DETECTOR.get());
 
                        output.accept(ModBlocks.CUBIUM_BLOCK.get());
                        output.accept(ModBlocks.RAW_CUBIUM_BLOCK.get());

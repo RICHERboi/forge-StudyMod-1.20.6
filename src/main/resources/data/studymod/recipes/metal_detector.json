@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "B": {
+      "item": "minecraft:blaze_rod"
+    },
+    "C": {
+      "item": "studymod:cubium"
+    }
+  },
+  "pattern": [
+    "  R",
+    " BB",
+    "C  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "studymod:metal_detector"
+  }
+}
