@@ -1,5 +1,6 @@
 package net.RICHER.studymod.Block;
 
+import net.RICHER.studymod.Block.Custom.SoundBlock;
 import net.RICHER.studymod.Item.ModItems;
 import net.RICHER.studymod.StudyMod;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -24,6 +25,9 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> RAW_CUBIUM_BLOCK = registerBlock("raw_cubium_block",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.RAW_IRON_BLOCK)));
+
+    public static final RegistryObject<SoundBlock> SOUND_BLOCK = registerBlock("sound_block",
+                () -> new SoundBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).requiresCorrectToolForDrops().strength(2f)));
 
     public static final RegistryObject<Block> CUBIUM_ORE = registerBlock("cubium_ore",
             () -> new DropExperienceBlock(UniformInt.of(4,7), BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE)

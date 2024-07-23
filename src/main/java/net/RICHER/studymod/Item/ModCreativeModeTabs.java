@@ -25,6 +25,8 @@ public class ModCreativeModeTabs {
                        output.accept(ModBlocks.CUBIUM_BLOCK.get());
                        output.accept(ModBlocks.RAW_CUBIUM_BLOCK.get());
 
+                       output.accept(ModBlocks.SOUND_BLOCK.get());
+
                        output.accept(ModBlocks.CUBIUM_ORE.get());
                        output.accept(ModBlocks.DEEPSLATE_CUBIUM_ORE.get());
                        output.accept(ModBlocks.NETHER_CUBIUM_ORE.get());

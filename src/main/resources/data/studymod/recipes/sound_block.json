@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "P": {
+      "tag": "minecraft:planks"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "C": {
+      "item": "studymod:cubium"
+    }
+  },
+  "pattern": [
+    "APA",
+    "PCP",
+    "ARA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "studymod:sound_block"
+  }
+}
