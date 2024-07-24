@@ -51,6 +51,8 @@ public class StudyMod {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.CUBIUM);
             event.accept(ModItems.RAW_CUBIUM);
+        } else if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.CUBERRY);
         }
     }
 

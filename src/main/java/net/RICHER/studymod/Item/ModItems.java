@@ -1,5 +1,6 @@
 package net.RICHER.studymod.Item;
 
+import net.RICHER.studymod.Item.Custom.FuelItem;
 import net.RICHER.studymod.Item.Custom.MetalDetectorItem;
 import net.RICHER.studymod.StudyMod;
 import net.minecraft.world.item.Item;
@@ -16,8 +17,12 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_CUBIUM = ITEMS.register("raw_cubium",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CUBERRY = ITEMS.register("cuberry",
+            () -> new Item(new Item.Properties().food(ModFoods.CUBERRY)));
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
             () -> new MetalDetectorItem(new Item.Properties().durability(128)));
+    public static final RegistryObject<Item> PINE_CONE = ITEMS.register("pine_cone",
+            () -> new FuelItem(new Item.Properties(), 100));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

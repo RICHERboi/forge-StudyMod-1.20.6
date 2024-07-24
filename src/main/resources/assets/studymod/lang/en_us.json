@@ -2,11 +2,16 @@
   "item.studymod.cubium": "Cubium",
   "item.studymod.raw_cubium": "Raw Cubium",
   "item.studymod.metal_detector": "Metal Detector",
+  "item.studymod.cuberry": "Cuberry",
+  "item.studymod.pine_cone": "Pine Cone",
+
+  "tooltip.studymod.metal_detector": "Finds valuables underground",
+  "tooltip.studymod.sound_block": "Makes music (it's so familiar... ඞ)",
 
   "block.studymod.cubium_block": "Block of Cubium",
   "block.studymod.raw_cubium_block": "Block of Raw Cubium",
 
-  "block.studymod.sound_block": "Sound Block (something's off)",
+  "block.studymod.sound_block": "Sound Block",
 
   "block.studymod.cubium_ore": "Cubium Ore",
   "block.studymod.deepslate_cubium_ore": "Deepslate Cubium Ore",
