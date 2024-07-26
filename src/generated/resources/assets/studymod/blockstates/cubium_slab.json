@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "studymod:block/cubium_slab"
+    },
+    "type=double": {
+      "model": "studymod:block/cubium_block"
+    },
+    "type=top": {
+      "model": "studymod:block/cubium_slab_top"
+    }
+  }
+}

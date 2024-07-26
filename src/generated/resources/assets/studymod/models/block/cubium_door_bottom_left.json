@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_bottom_left",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "studymod:block/cubium_door_bottom",
+    "top": "studymod:block/cubium_door_top"
+  }
+}

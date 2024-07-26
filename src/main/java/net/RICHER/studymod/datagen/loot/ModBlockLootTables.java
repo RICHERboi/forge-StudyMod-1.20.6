@@ -27,6 +27,19 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.RAW_CUBIUM_BLOCK.get());
         this.dropSelf(ModBlocks.SOUND_BLOCK.get());
 
+        this.dropSelf(ModBlocks.CUBIUM_STAIRS.get());
+        this.dropSelf(ModBlocks.CUBIUM_FENCE.get());
+        this.dropSelf(ModBlocks.CUBIUM_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.CUBIUM_WALL.get());
+        this.dropSelf(ModBlocks.CUBIUM_BUTTON.get());
+        this.dropSelf(ModBlocks.CUBIUM_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.CUBIUM_TRAPDOOR.get());
+
+        this.add(ModBlocks.CUBIUM_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CUBIUM_SLAB.get()));
+        this.add(ModBlocks.CUBIUM_DOOR.get(),
+                block -> createDoorTable(ModBlocks.CUBIUM_DOOR.get()));
+
         this.add(ModBlocks.CUBIUM_ORE.get(),
                 block -> createCubiumOreDrops(ModBlocks.CUBIUM_ORE.get(), ModItems.RAW_CUBIUM.get()));
         this.add(ModBlocks.DEEPSLATE_CUBIUM_ORE.get(),

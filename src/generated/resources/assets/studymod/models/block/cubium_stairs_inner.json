@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "studymod:block/cubium_block",
+    "side": "studymod:block/cubium_block",
+    "top": "studymod:block/cubium_block"
+  }
+}

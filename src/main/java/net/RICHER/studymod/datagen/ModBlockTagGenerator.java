@@ -42,6 +42,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.END_CUBIUM_ORE.get());
 
+        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
+                .add(ModBlocks.SOUND_BLOCK.get());
+
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.CUBIUM_ORE.get(),
                         ModBlocks.DEEPSLATE_CUBIUM_ORE.get(),
@@ -52,7 +55,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.SOUND_BLOCK.get());
-        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
-                .add(ModBlocks.SOUND_BLOCK.get());
+
+        this.tag(BlockTags.FENCES).add(ModBlocks.CUBIUM_FENCE.get());
+        this.tag(BlockTags.FENCE_GATES).add(ModBlocks.CUBIUM_FENCE_GATE.get());
+        this.tag(BlockTags.WALLS).add(ModBlocks.CUBIUM_WALL.get());
+
     }
 }

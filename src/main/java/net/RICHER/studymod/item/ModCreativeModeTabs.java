@@ -18,21 +18,32 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.CUBIUM.get()))
                     .title(Component.translatable("creativetab.study_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
-                       output.accept(ModItems.RAW_CUBIUM.get());
-                       output.accept(ModItems.CUBIUM.get());
-                       output.accept(ModItems.METAL_DETECTOR.get());
-                       output.accept(ModItems.CUBERRY.get());
-                       output.accept(ModItems.PINE_CONE.get());
+                        output.accept(ModItems.CUBERRY.get());
+                        output.accept(ModItems.METAL_DETECTOR.get());
+                        output.accept(ModItems.PINE_CONE.get());
 
-                       output.accept(ModBlocks.CUBIUM_BLOCK.get());
-                       output.accept(ModBlocks.RAW_CUBIUM_BLOCK.get());
+                        output.accept(ModBlocks.SOUND_BLOCK.get());
 
-                       output.accept(ModBlocks.SOUND_BLOCK.get());
+                        output.accept(ModItems.CUBIUM.get());
+                        output.accept(ModBlocks.CUBIUM_BLOCK.get());
 
-                       output.accept(ModBlocks.CUBIUM_ORE.get());
-                       output.accept(ModBlocks.DEEPSLATE_CUBIUM_ORE.get());
-                       output.accept(ModBlocks.NETHER_CUBIUM_ORE.get());
-                       output.accept(ModBlocks.END_CUBIUM_ORE.get());
+                        output.accept(ModBlocks.CUBIUM_STAIRS.get());
+                        output.accept(ModBlocks.CUBIUM_SLAB.get());
+                        output.accept(ModBlocks.CUBIUM_WALL.get());
+                        output.accept(ModBlocks.CUBIUM_FENCE.get());
+                        output.accept(ModBlocks.CUBIUM_FENCE_GATE.get());
+                        output.accept(ModBlocks.CUBIUM_DOOR.get());
+                        output.accept(ModBlocks.CUBIUM_TRAPDOOR.get());
+                        output.accept(ModBlocks.CUBIUM_BUTTON.get());
+                        output.accept(ModBlocks.CUBIUM_PRESSURE_PLATE.get());
+
+                        output.accept(ModItems.RAW_CUBIUM.get());
+                        output.accept(ModBlocks.RAW_CUBIUM_BLOCK.get());
+
+                        output.accept(ModBlocks.CUBIUM_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_CUBIUM_ORE.get());
+                        output.accept(ModBlocks.NETHER_CUBIUM_ORE.get());
+                        output.accept(ModBlocks.END_CUBIUM_ORE.get());
                     })
                     .build());
 

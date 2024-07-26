@@ -18,5 +18,15 @@
   "block.studymod.nether_cubium_ore": "Nether Cubium Ore",
   "block.studymod.end_cubium_ore": "End Cubium Ore",
 
+  "block.studymod.cubium_stairs": "Cubium Stairs",
+  "block.studymod.cubium_slab": "Cubium Slab",
+  "block.studymod.cubium_button": "Cubium Button",
+  "block.studymod.cubium_pressure_plate": "Cubium Pressure Plate",
+  "block.studymod.cubium_fence": "Cubium Fence",
+  "block.studymod.cubium_fence_gate": "Cubium Fence Gate",
+  "block.studymod.cubium_wall": "Cubium Wall",
+  "block.studymod.cubium_door": "Cubium Door",
+  "block.studymod.cubium_trapdoor": "Cubium Trapdoor",
+
   "creativetab.study_tab": "Study Tab"
 }
