@@ -1,10 +1,9 @@
 package net.RICHER.studymod;
 
 import com.mojang.logging.LogUtils;
-import net.RICHER.studymod.Block.ModBlocks;
-import net.RICHER.studymod.Item.ModCreativeModeTabs;
-import net.RICHER.studymod.Item.ModItems;
-import net.minecraft.world.item.CreativeModeTab;
+import net.RICHER.studymod.block.ModBlocks;
+import net.RICHER.studymod.item.ModCreativeModeTabs;
+import net.RICHER.studymod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -45,7 +44,6 @@ public class StudyMod {
 
     }
 
-    // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event){
 
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {

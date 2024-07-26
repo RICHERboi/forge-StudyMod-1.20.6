@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.8,
+  "group": "cubium",
+  "ingredient": {
+    "item": "studymod:end_cubium_ore"
+  },
+  "result": {
+    "id": "studymod:cubium"
+  }
+}
