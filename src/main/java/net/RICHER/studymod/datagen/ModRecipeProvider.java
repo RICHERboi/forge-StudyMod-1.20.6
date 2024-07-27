@@ -69,7 +69,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.RAW_CUBIUM.get()), has(ModItems.RAW_CUBIUM.get()))
                 .save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, ModItems.METAL_DETECTOR.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.METAL_DETECTOR.get())
                 .pattern("  R")
                 .pattern(" BB")
                 .pattern("C  ")
@@ -79,6 +79,66 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.CUBIUM.get()), has(ModItems.CUBIUM.get()))
                 .save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CUBIUM_STAFF.get())
+                .pattern("  C")
+                .pattern(" B ")
+                .pattern("c  ")
+                .define('C', ModBlocks.CUBIUM_BLOCK.get())
+                .define('B', Items.BREEZE_ROD)
+                .define('c', ModItems.CUBIUM.get())
+                .unlockedBy(getHasName(ModItems.CUBIUM.get()), has(ModItems.CUBIUM.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUBIUM_STAIRS.get(),4)
+                .pattern("#  ").pattern("## ").pattern("###")
+                .define('#', ModItems.CUBIUM.get())
+                .unlockedBy(getHasName(ModItems.CUBIUM.get()), has(ModItems.CUBIUM.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUBIUM_SLAB.get(), 6)
+                .pattern("###")
+                .define('#', ModItems.CUBIUM.get())
+                .unlockedBy(getHasName(ModItems.CUBIUM.get()), has(ModItems.CUBIUM.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUBIUM_WALL.get(), 6)
+                .pattern("###").pattern("###")
+                .define('#', ModItems.CUBIUM.get())
+                .unlockedBy(getHasName(ModItems.CUBIUM.get()), has(ModItems.CUBIUM.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.CUBIUM_FENCE.get(), 6)
+                .pattern("W#W").pattern("W#W")
+                .define('W', ModBlocks.CUBIUM_BLOCK.get()).define('#', ModItems.CUBIUM.get())
+                .unlockedBy(getHasName(ModItems.CUBIUM.get()), has(ModItems.CUBIUM.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, ModBlocks.CUBIUM_FENCE_GATE.get(), 2)
+                .pattern("#W#").pattern("#W#")
+                .define('#', ModItems.CUBIUM.get()).define('W', ModBlocks.CUBIUM_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.CUBIUM.get()), has(ModItems.CUBIUM.get()))
+                .save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.REDSTONE, ModBlocks.CUBIUM_BUTTON.get())
+                .requires(ModItems.CUBIUM.get())
+                .unlockedBy(getHasName(ModItems.CUBIUM.get()), has(ModItems.CUBIUM.get()))
+                .save(recipeOutput);
+
+        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.CUBIUM_PRESSURE_PLATE.get(), Ingredient.of(ModItems.CUBIUM.get()))
+                .unlockedBy(getHasName(ModItems.CUBIUM.get()), has(ModItems.CUBIUM.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, ModBlocks.CUBIUM_DOOR.get())
+                .pattern("##").pattern("##").pattern("##")
+                .define('#', ModItems.CUBIUM.get())
+                .unlockedBy(getHasName(ModItems.CUBIUM.get()), has(ModItems.CUBIUM.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, ModBlocks.CUBIUM_TRAPDOOR.get(), 2)
+                .pattern("#G#").pattern("###")
+                .define('#', ModItems.CUBIUM.get()).define('G', Items.GLASS_PANE)
+                .unlockedBy(getHasName(ModItems.CUBIUM.get()), has(ModItems.CUBIUM.get()))
+                .save(recipeOutput);
     }
 
     protected static void oreSmelting(RecipeOutput pRecipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup) {

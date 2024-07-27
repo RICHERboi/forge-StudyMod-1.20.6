@@ -4,6 +4,7 @@ import net.RICHER.studymod.item.custom.FuelItem;
 import net.RICHER.studymod.item.custom.MetalDetectorItem;
 import net.RICHER.studymod.StudyMod;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -20,9 +21,12 @@ public class ModItems {
     public static final RegistryObject<Item> CUBERRY = ITEMS.register("cuberry",
             () -> new Item(new Item.Properties().food(ModFoods.CUBERRY)));
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
-            () -> new MetalDetectorItem(new Item.Properties().durability(128)));
+            () -> new MetalDetectorItem(new Item.Properties().stacksTo(1)
+                    .rarity(Rarity.COMMON).durability(128)));
     public static final RegistryObject<Item> PINE_CONE = ITEMS.register("pine_cone",
             () -> new FuelItem(new Item.Properties(), 100));
+    public static final RegistryObject<Item> CUBIUM_STAFF = ITEMS.register("cubium_staff",
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE).stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

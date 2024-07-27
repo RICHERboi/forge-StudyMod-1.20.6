@@ -37,7 +37,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         doorBlockWithRenderType(((DoorBlock) ModBlocks.CUBIUM_DOOR.get()), modLoc("block/cubium_door_bottom"),
                 modLoc("block/cubium_door_top"), "cutout");
-        trapdoorBlock(((TrapDoorBlock) ModBlocks.CUBIUM_TRAPDOOR.get()), modLoc("block/cubium_trapdoor"), true);
+        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.CUBIUM_TRAPDOOR.get()), modLoc("block/cubium_trapdoor"), true, "cutout");
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

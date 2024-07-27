@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "redstone",
+  "category": "equipment",
   "key": {
     "B": {
       "item": "minecraft:blaze_rod"

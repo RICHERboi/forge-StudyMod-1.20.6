@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "studymod:cubium"
+    },
+    "G": {
+      "item": "minecraft:glass_pane"
+    }
+  },
+  "pattern": [
+    "#G#",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "id": "studymod:cubium_trapdoor"
+  }
+}

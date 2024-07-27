@@ -19,8 +19,9 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.study_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.CUBERRY.get());
-                        output.accept(ModItems.METAL_DETECTOR.get());
                         output.accept(ModItems.PINE_CONE.get());
+                        output.accept(ModItems.METAL_DETECTOR.get());
+                        output.accept(ModItems.CUBIUM_STAFF.get());
 
                         output.accept(ModBlocks.SOUND_BLOCK.get());
 

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "minecraft:breeze_rod"
+    },
+    "C": {
+      "item": "studymod:cubium_block"
+    },
+    "c": {
+      "item": "studymod:cubium"
+    }
+  },
+  "pattern": [
+    "  C",
+    " B ",
+    "c  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "studymod:cubium_staff"
+  }
+}

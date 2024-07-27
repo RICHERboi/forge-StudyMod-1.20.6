@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cubium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "studymod:cubium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "studymod:cubium_pressure_plate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cubium"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "studymod:cubium_pressure_plate"
+    ]
+  }
+}

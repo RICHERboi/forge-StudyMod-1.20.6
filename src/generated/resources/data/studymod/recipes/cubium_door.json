@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "studymod:cubium"
+    }
+  },
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 1,
+    "id": "studymod:cubium_door"
+  }
+}
