@@ -20,9 +20,14 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.CUBERRY.get());
                         output.accept(ModItems.PINE_CONE.get());
+
                         output.accept(ModItems.METAL_DETECTOR.get());
                         output.accept(ModItems.CUBIUM_STAFF.get());
-
+                        output.accept(ModItems.CUBIUM_SWORD.get());
+                        output.accept(ModItems.CUBIUM_PICKAXE.get());
+                        output.accept(ModItems.CUBIUM_AXE.get());
+                        output.accept(ModItems.CUBIUM_SHOVEL.get());
+                        output.accept(ModItems.CUBIUM_HOE.get());
                         output.accept(ModBlocks.SOUND_BLOCK.get());
 
                         output.accept(ModItems.CUBIUM.get());

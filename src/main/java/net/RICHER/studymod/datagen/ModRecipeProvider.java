@@ -139,6 +139,58 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('#', ModItems.CUBIUM.get()).define('G', Items.GLASS_PANE)
                 .unlockedBy(getHasName(ModItems.CUBIUM.get()), has(ModItems.CUBIUM.get()))
                 .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CUBIUM_SWORD.get())
+                .pattern(" C ")
+                .pattern(" C ")
+                .pattern(" B ")
+                .define('C', ModItems.CUBIUM.get())
+                .define('B', Items.BREEZE_ROD)
+                .unlockedBy(getHasName(ModItems.CUBIUM.get()), has(ModItems.CUBIUM.get()))
+                .unlockedBy(getHasName(Items.BREEZE_ROD), has(Items.BREEZE_ROD))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CUBIUM_PICKAXE.get())
+                .pattern("CCC")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('C', ModItems.CUBIUM.get())
+                .define('B', Items.BREEZE_ROD)
+                .unlockedBy(getHasName(ModItems.CUBIUM.get()), has(ModItems.CUBIUM.get()))
+                .unlockedBy(getHasName(Items.BREEZE_ROD), has(Items.BREEZE_ROD))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CUBIUM_AXE.get())
+                .pattern("CC ")
+                .pattern("CB ")
+                .pattern(" B ")
+                .define('C', ModItems.CUBIUM.get())
+                .define('B', Items.BREEZE_ROD)
+                .unlockedBy(getHasName(ModItems.CUBIUM.get()), has(ModItems.CUBIUM.get()))
+                .unlockedBy(getHasName(Items.BREEZE_ROD), has(Items.BREEZE_ROD))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CUBIUM_SHOVEL.get())
+                .pattern(" C ")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('C', ModItems.CUBIUM.get())
+                .define('B', Items.BREEZE_ROD)
+                .unlockedBy(getHasName(ModItems.CUBIUM.get()), has(ModItems.CUBIUM.get()))
+                .unlockedBy(getHasName(Items.BREEZE_ROD), has(Items.BREEZE_ROD))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CUBIUM_HOE.get())
+                .pattern("CC ")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('C', ModItems.CUBIUM.get())
+                .define('B', Items.BREEZE_ROD)
+                .unlockedBy(getHasName(ModItems.CUBIUM.get()), has(ModItems.CUBIUM.get()))
+                .unlockedBy(getHasName(Items.BREEZE_ROD), has(Items.BREEZE_ROD))
+                .save(recipeOutput);
+
+
     }
 
     protected static void oreSmelting(RecipeOutput pRecipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup) {

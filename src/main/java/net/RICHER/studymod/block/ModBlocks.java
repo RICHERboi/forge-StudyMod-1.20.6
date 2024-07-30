@@ -28,7 +28,8 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.RAW_IRON_BLOCK)));
 
     public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
-                () -> new SoundBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).requiresCorrectToolForDrops().strength(2f)));
+                () -> new SoundBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)
+                        .requiresCorrectToolForDrops().strength(2f)));
 
     public static final RegistryObject<Block> CUBIUM_ORE = registerBlock("cubium_ore",
             () -> new DropExperienceBlock(UniformInt.of(4,7), BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE)

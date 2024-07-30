@@ -5,6 +5,11 @@
   "item.studymod.cubium_staff": "Cubium Staff",
   "item.studymod.cuberry": "Cuberry",
   "item.studymod.pine_cone": "Pine Cone",
+  "item.studymod.cubium_sword": "Cubium Sword",
+  "item.studymod.cubium_pickaxe": "Cubium Pickaxe",
+  "item.studymod.cubium_axe": "Cubium Axe",
+  "item.studymod.cubium_shovel": "Cubium Shovel",
+  "item.studymod.cubium_hoe": "Cubium Hoe",
 
   "tooltip.studymod.metal_detector": "Finds valuables underground",
   "tooltip.studymod.sound_block": "Makes music (it's so familiar... ඞ)",

@@ -40,6 +40,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.CUBIUM_FENCE_GATE);
 
         trapdoorItem(ModBlocks.CUBIUM_TRAPDOOR);
+        handheldItem(ModItems.CUBIUM_SWORD);
+        handheldItem(ModItems.CUBIUM_PICKAXE);
+        handheldItem(ModItems.CUBIUM_AXE);
+        handheldItem(ModItems.CUBIUM_SHOVEL);
+        handheldItem(ModItems.CUBIUM_HOE);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
@@ -70,7 +75,6 @@ public class ModItemModelProvider extends ItemModelProvider {
                 modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath() + "_bottom"));
     }
 // thx for oskar-jas1! ^w^ trapdoorItem and evenSimplerBlockItem methods are from him
-// (source: https://github.com/oskar-jas1/Forge-First-Mod-1.20.6/blob/master/src/main/java/net/o/tutorialmod/datagen/ModItemModelProvider.java)
     private void evenSimplerBlockItem(RegistryObject<Block> block) {
         this.withExistingParent(StudyMod.MOD_ID + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
                 modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
@@ -79,6 +83,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(StudyMod.MOD_ID, "item/" + item.getId().getPath()));
+    }
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(StudyMod.MOD_ID,"item/" + item.getId().getPath()));
     }
 }
 
